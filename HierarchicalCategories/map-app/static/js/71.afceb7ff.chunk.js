@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmap_app=self.webpackChunkmap_app||[]).push([[71],{6071:(e,p,a)=>{a.d(p,{createArchitectureServices:()=>c.S});var c=a(6677);a(6660)}}]);
