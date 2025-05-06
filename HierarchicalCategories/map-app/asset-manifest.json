@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/demo/HierarchicalCategories/map-app/static/css/main.809e89fa.css",
-    "main.js": "/demo/HierarchicalCategories/map-app/static/js/main.65847702.js",
+    "main.js": "/demo/HierarchicalCategories/map-app/static/js/main.3424eec5.js",
     "static/js/17.a484a705.chunk.js": "/demo/HierarchicalCategories/map-app/static/js/17.a484a705.chunk.js",
     "static/js/748.d4a76ba5.chunk.js": "/demo/HierarchicalCategories/map-app/static/js/748.d4a76ba5.chunk.js",
     "static/js/536.4a03807f.chunk.js": "/demo/HierarchicalCategories/map-app/static/js/536.4a03807f.chunk.js",
@@ -41,7 +41,7 @@
     "static/js/195.9565bee3.chunk.js": "/demo/HierarchicalCategories/map-app/static/js/195.9565bee3.chunk.js",
     "index.html": "/demo/HierarchicalCategories/map-app/index.html",
     "main.809e89fa.css.map": "/demo/HierarchicalCategories/map-app/static/css/main.809e89fa.css.map",
-    "main.65847702.js.map": "/demo/HierarchicalCategories/map-app/static/js/main.65847702.js.map",
+    "main.3424eec5.js.map": "/demo/HierarchicalCategories/map-app/static/js/main.3424eec5.js.map",
     "17.a484a705.chunk.js.map": "/demo/HierarchicalCategories/map-app/static/js/17.a484a705.chunk.js.map",
     "748.d4a76ba5.chunk.js.map": "/demo/HierarchicalCategories/map-app/static/js/748.d4a76ba5.chunk.js.map",
     "536.4a03807f.chunk.js.map": "/demo/HierarchicalCategories/map-app/static/js/536.4a03807f.chunk.js.map",
@@ -77,6 +77,6 @@
   },
   "entrypoints": [
     "static/css/main.809e89fa.css",
-    "static/js/main.65847702.js"
+    "static/js/main.3424eec5.js"
   ]
 }
