@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIF位置情報表示</title>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="script.js"></script>
+    <style>
+        #description-area {
+            width: 80%;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        #drop-zone {
+            width: 80%;
+            height: 200px;
+            border: 2px dashed #ccc;
+            border-radius: 4px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        #drop-zone.dragover {
+            background-color: #e1e1e1;
+            border-color: #999;
+        }
+
+        #info-area {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .map-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="description-area">
+        <h1>EXIF位置情報表示</h1>
+        <ul>
+            <li> jpeg画像ファイルをドラッグ&ドロップしてください
+            <li> exifデータが存在する場合、緯度経度を抽出して緯度経度情報を度分秒形式、および10進数形式で表示します
+            <li> 抽出された緯度経度でGoogleマップやOpenStreetMapを参照することもできます
+        </ul>
+        <p style="font-size: 0.8em; color: #666; margin-top: 20px;">
+            This application uses <a href="https://github.com/exif-js/exif-js" target="_blank">Exif.js</a> 
+            (MIT License: Copyright (c) 2008 Jacob Seidelin)
+        </p>
+    </div>
+    <div id="drop-zone">
+        ここにJPEG画像をドラッグ＆ドロップしてください
+    </div>
+    <div id="info-area">
+        <h3>位置情報</h3>
+        <div id="location-info"></div>
+        <div id="map-links"></div>
+    </div>
+</body>
+
+</html>
