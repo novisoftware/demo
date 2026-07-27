@@ -7,7 +7,7 @@ function TitleScreen({ onStart }) {
   return h(
     'div',
     { className: 'panel' },
-    h('h1', null, 'ワイヤーフレーム ローテートシューター'),
+    h('h1', null, '試作シューティングゲーム (段階001)'),
     h(
       'p',
       null,
