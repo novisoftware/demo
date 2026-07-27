@@ -1,0 +1,141 @@
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #05080a;
+  color: #dff6ff;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+}
+
+#app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- タイトル / 結果画面 (React 管轄) --- */
+.panel {
+  max-width: 420px;
+  text-align: center;
+  padding: 24px;
+}
+.panel h1 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+.panel h2 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+}
+.panel p {
+  color: #9fd3e6;
+  line-height: 1.7;
+}
+.score-line {
+  font-family: 'Consolas', monospace;
+  font-size: 1.2rem;
+}
+.panel-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.btn-primary,
+.btn-secondary {
+  font-size: 1rem;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: 1px solid #6cd3ff;
+  background: transparent;
+  color: #dff6ff;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #123642;
+}
+
+/* --- ゲーム画面 (Game/Screen が直接生成する非 React 領域) --- */
+.game-mount {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-layout {
+  --stage-size: min(92vw, 62vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.stage {
+  width: var(--stage-size);
+  aspect-ratio: 1 / 1;
+  border: 1px solid #23414d;
+  box-shadow: 0 0 24px rgba(80, 180, 220, 0.15) inset;
+}
+.game-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+}
+
+/* ボタンはゲーム画面(正方形)の外側に配置する */
+.controls {
+  width: var(--stage-size);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.control-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  border: 1px solid #4c8ba0;
+  background: #0d2229;
+  color: #dff6ff;
+  border-radius: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+.btn:active {
+  background: #194553;
+}
+.btn-shoot {
+  width: 64px;
+  height: 64px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  letter-spacing: 0.05em;
+}
+.btn-turn {
+  width: 76px;
+  height: 56px;
+  font-size: 1.4rem;
+}
+.btn-pause {
+  align-self: center;
+  width: 64px;
+  height: 40px;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  letter-spacing: 0.05em;
+}
